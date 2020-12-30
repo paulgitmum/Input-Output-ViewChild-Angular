@@ -1,0 +1,7 @@
+<div>
+  <p>child works!</p>
+  <h2 style="color: tomato">{{ data }}</h2>
+  <label>Add an item: <input #newItem /></label>
+  <button (click)="addNewItem(newItem.value)">Data From Child</button>
+  <button (click)="addMessage()">Message From Child</button>
+</div>

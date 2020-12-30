@@ -1,0 +1,15 @@
+<div>
+  <p>parent works!</p>
+  <app-child
+    [data]="data"
+    (dataFromChild)="addItem($event)"
+    (messageFromChild)="recieveMessage($event)"
+  ></app-child>
+  <div>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </div>
+  <div>
+    <h2>{{ msgFromChild }}</h2>
+    <h2 style="color: rgb(66, 92, 5)">{{ dataChild }}</h2>
+  </div>
+</div>
